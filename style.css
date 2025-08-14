@@ -1,0 +1,129 @@
+/* ====== General Page Styling ====== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: radial-gradient(circle at top, #141414, #0a0a0a);
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ====== Header ====== */
+header {
+    background: linear-gradient(90deg, #1a1a1a, #000);
+    padding: 20px 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.7);
+}
+
+h1 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+/* ====== Navigation Bar ====== */
+nav {
+    margin-top: 12px;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background: crimson;
+    box-shadow: 0 0 10px crimson;
+}
+
+/* ====== Main Content ====== */
+main {
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.banner {
+    max-width: 95%;
+    border-radius: 12px;
+    margin-top: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+}
+
+/* ====== Forms ====== */
+form {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 12px;
+    width: 260px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #1f1f1f;
+    color: white;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 18px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+
+.note {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* ====== Movie List Grid ====== */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.movie-card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.movie-card:hover {
+    background: crimson;
+    color: white;
+    box-shadow: 0 0 15px crimson;
+    transform: translateY(-5px);
+}
+
+/* ====== Footer ====== */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background: linear-gradient(90deg, #1a1a1a, #000)
+}
